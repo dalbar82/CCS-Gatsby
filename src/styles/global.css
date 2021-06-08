@@ -113,7 +113,7 @@ ul li {
 
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 9px 12px;
   margin-bottom: 0;
   font-size: 1.4em;
   text-transform: uppercase;
@@ -173,8 +173,7 @@ ul li {
 }
 
 a.artist-link,
-a.artist-link:visited
-{
+a.artist-link:visited {
   text-transform: uppercase;
   text-decoration: none;
   -webkit-transition: all 0.5s;
@@ -189,7 +188,7 @@ a.artist-link:visited
 
 a.artist-link:hover,
 a.artist-link:active,
-a.artist-link:focus{
+a.artist-link:focus {
   color: #b8e5f2;
   text-decoration: none;
   text-shadow: #000 2px 2px;
@@ -333,4 +332,3 @@ a.big-background-btn {
   z-index: 0;
   backface-visibility: hidden;
 }
-
