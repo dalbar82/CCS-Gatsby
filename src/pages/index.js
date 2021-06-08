@@ -1,11 +1,11 @@
 import React from "react";
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Pic from "../images/creative-services-2017.png";
 import "../styles/global.css"
-import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image"
+
 
 export default function Home() {
+
   return (
     <div className="big-background">
     <video id="bgndVideo" src="https://ia801203.us.archive.org/13/items/btrupp-0006-palm-trees-15s/btrupp-0006-palm-trees-15s.mp4" autoPlay loop muted />
@@ -19,12 +19,8 @@ export default function Home() {
       </div>
 
       <div className="big-background-container">
-          <StaticImage
-            src="../images/creative-services-2017.png"
-            alt="A dinosaur"
-            placeholder="blurred"
-            className="img-responsive"
-          />
+      <img src={Pic} alt="Logo" className="img-responsive"/>
+  
           <ul className="carousel-artists">
             <li><a href="https://jamesreyne.com.au" target="_blank" rel="noopener noreferrer" className="artist-link">james reyne</a></li>
             <li><a href="https://thebabyanimals.com" target="_blank" rel="noopener noreferrer" className="artist-link">baby animals</a></li>
@@ -44,11 +40,4 @@ export default function Home() {
 );
 }
 
-export const query = graphql`query Banner {
-  file(relativePath: {eq: "creative-services-2017.png"}) {
-    childImageSharp {
-      gatsbyImageData
-    }
-  }
-}
-`
+
