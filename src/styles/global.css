@@ -72,7 +72,7 @@ ul li {
 }
 
 .pattern {
-  background-image: url(https://creativeservices.com.au/wp-content/themes/bootstrapwp/img/pattern.png);
+  background-image: url("../images/pattern.png");
   background-repeat: repeat;
   background-attachment: scroll;
   width: 100%;
